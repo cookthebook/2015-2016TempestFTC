@@ -5,7 +5,108 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="@string/tournament_mode_title" android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tournament_mode_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tournament_mode_btntext"
+        android:id="@+id/tournament_mode_btn"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/tournament_mode_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="noAssignmentNotice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_autonomous_title"
+        android:id="@+id/test_autonomous_text"
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/tournament_mode_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_autonomous_btntext"
+        android:id="@+id/test_autonomous_btn"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/test_autonomous_text"
+        android:layout_alignLeft="@+id/tournament_mode_btn"
+        android:layout_alignStart="@+id/tournament_mode_btn"
+        android:onClick="noAssignmentNotice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drive_robot_title"
+        android:id="@+id/drive_robot_text"
+        android:textSize="40sp"
+        android:layout_below="@+id/test_autonomous_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drive_robot_btntext"
+        android:id="@+id/drive_robot_btn"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/drive_robot_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="noAssignmentNotice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/move_motors_title"
+        android:id="@+id/move_motors_text"
+        android:textSize="40sp"
+        android:layout_below="@+id/drive_robot_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/move_motors_btntext"
+        android:id="@+id/move_motors_btn"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/move_motors_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="noAssignmentNotice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_view_title"
+        android:id="@+id/sensor_view_text"
+        android:textSize="40sp"
+        android:layout_below="@+id/move_motors_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_view_btntext"
+        android:id="@+id/sensor_view_btn"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/sensor_view_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="noAssignmentNotice"/>
 
 </RelativeLayout>

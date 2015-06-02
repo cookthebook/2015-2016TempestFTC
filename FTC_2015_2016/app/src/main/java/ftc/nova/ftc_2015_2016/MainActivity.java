@@ -4,14 +4,25 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private Button tournamentModeBtn, testAutonomousBtn, driveRobotBtn, moveMotorsBtn, sensorViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tournamentModeBtn = (Button) findViewById(R.id.tournament_mode_btn);
+        testAutonomousBtn = (Button) findViewById(R.id.test_autonomous_btn);
+        driveRobotBtn = (Button) findViewById(R.id.drive_robot_btn);
+        moveMotorsBtn = (Button) findViewById(R.id.move_motors_btn);
+        sensorViewBtn = (Button) findViewById(R.id.sensor_view_btn);
     }
 
 
@@ -35,5 +46,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void noAssignmentNotice(View view) {
+        Toast.makeText(this, "This function has no assignment yet...", Toast.LENGTH_SHORT).show();
     }
 }
