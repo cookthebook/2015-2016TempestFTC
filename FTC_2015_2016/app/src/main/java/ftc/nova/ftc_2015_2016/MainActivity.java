@@ -1,5 +1,6 @@
 package ftc.nova.ftc_2015_2016;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,6 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-
     private Button tournamentModeBtn, testAutonomousBtn, driveRobotBtn, moveMotorsBtn, sensorViewBtn;
 
     @Override
@@ -50,5 +50,30 @@ public class MainActivity extends ActionBarActivity {
 
     public void noAssignmentNotice(View view) {
         Toast.makeText(this, "This function has no assignment yet...", Toast.LENGTH_SHORT).show();
+    }
+
+    public void enterTournamentMode(View view) {
+        Intent intent = new Intent(this, TournamentActivity.class);
+        startActivity(intent);
+    }
+
+    public void enterAutonomousMode(View view) {
+        Intent intent = new Intent(this, AutonomousActivity.class);
+        startActivity(intent);
+    }
+
+    public void enterDriveMode(View view) {
+        Intent intent = new Intent(this, DriveActivity.class);
+        startActivity(intent);
+    }
+
+    public void enterMotorMode(View view) {
+        Intent intent = new Intent(this, MotorActivity.class);
+        startActivity(intent);
+    }
+
+    public void enterSensorMode(View view) {
+        Intent intent = new Intent(this, SensorActivity.class);
+        startActivity(intent);
     }
 }

@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TournamentActivity"
+            android:label="@string/title_activity_tournament" >
+        </activity>
+        <activity
+            android:name=".AutonomousActivity"
+            android:label="@string/title_activity_autonomous" >
+        </activity>
+        <activity
+            android:name=".DriveActivity"
+            android:label="@string/title_activity_drive" >
+        </activity>
+        <activity
+            android:name=".MotorActivity"
+            android:label="@string/title_activity_motor" >
+        </activity>
+        <activity
+            android:name=".SensorActivity"
+            android:label="@string/title_activity_sensor" >
+        </activity>
     </application>
 
 </manifest>

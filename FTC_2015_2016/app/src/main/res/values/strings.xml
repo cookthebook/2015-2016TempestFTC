@@ -5,17 +5,15 @@
     <string name="action_settings">Settings</string>
 
     <string name="tournament_mode_title">Tournament Mode</string>
-    <string name="tournament_mode_btntext">Start</string>
-
     <string name="test_autonomous_title">Test Autonomous</string>
-    <string name="test_autonomous_btntext">Start</string>
-
     <string name="drive_robot_title">Drive Robot</string>
-    <string name="drive_robot_btntext">Start</string>
-
     <string name="move_motors_title">Move Motors</string>
-    <string name="move_motors_btntext">Start</string>
-
     <string name="sensor_view_title">Sensor View</string>
-    <string name="sensor_view_btntext">Start</string>
+    <string name="background_image_description">Main background image</string>
+    <string name="title_activity_tournament">TournamentActivity</string>
+    <string name="title_activity_autonomous">AutonomousActivity</string>
+    <string name="title_activity_drive">DriveActivity</string>
+    <string name="no_content">No content has been created for this mode.</string>
+    <string name="title_activity_motor">MotorActivity</string>
+    <string name="title_activity_sensor">SensorActivity</string>
 </resources>
