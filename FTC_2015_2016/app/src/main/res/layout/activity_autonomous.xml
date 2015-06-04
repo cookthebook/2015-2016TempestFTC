@@ -6,13 +6,32 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="ftc.nova.ftc_2015_2016.AutonomousActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_content"
-        android:id="@+id/tournament_mode_content"
+        android:text="@string/test_autonomous_select_autonomous"
+        android:id="@+id/test_autonomous_select_btn"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="selectAutonomous"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_autonomous_edit_autonomous"
+        android:id="@+id/test_autonomous_edit_btn"
+        android:layout_below="@+id/test_autonomous_select_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="editAutonomous"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_autonomous_sort_autonomous"
+        android:id="@+id/test_autonomous_sort_btn"
+        android:layout_below="@+id/test_autonomous_edit_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

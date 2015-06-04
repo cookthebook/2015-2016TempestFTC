@@ -16,4 +16,18 @@
     <string name="no_content">No content has been created for this mode.</string>
     <string name="title_activity_motor">MotorActivity</string>
     <string name="title_activity_sensor">SensorActivity</string>
+    <string name="title_activity_select_autonomous">SelectAutonomousActivity</string>
+    <string name="autonomous_select_no_autonomous">No Autonomous</string>
+    <string name="autonomous_select_done">Done</string>
+    <string name="tournament_select_teleop">Select Teleop</string>
+    <string name="tournament_select_autonomous">Select Autonomous</string>
+    <string name="title_activity_select_teleop">SelectTeleopActivity</string>
+    <string name="teleop_select_no_teleop">No Teleop</string>
+    <string name="teleop_select_done">Done</string>
+    <string name="tournament_mode_go">Go!</string>
+    <string name="title_activity_edit_autonomous">EditAutonomousActivity</string>
+    <string name="test_autonomous_select_autonomous">Select an Autonomous</string>
+    <string name="test_autonomous_edit_autonomous">Edit an Autonomous</string>
+    <string name="test_autonomous_sort_autonomous">Sort Autonomous Programs</string>
+    <string name="edit_autonomous_done">Done</string>
 </resources>

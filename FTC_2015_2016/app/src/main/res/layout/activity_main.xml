@@ -13,43 +13,48 @@
         android:layout_height="wrap_content"
         android:text="@string/tournament_mode_title"
         android:id="@+id/tournament_mode_btn"
+        android:onClick="enterTournamentMode"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterTournamentMode"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/test_autonomous_title"
         android:id="@+id/test_autonomous_btn"
+        android:onClick="enterAutonomousMode"
         android:layout_below="@+id/tournament_mode_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterAutonomousMode"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/drive_robot_title"
         android:id="@+id/drive_robot_btn"
+        android:onClick="enterDriveMode"
         android:layout_below="@+id/test_autonomous_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterDriveMode"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/move_motors_title"
         android:id="@+id/move_motors_btn"
+        android:onClick="enterMotorMode"
         android:layout_below="@+id/drive_robot_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterMotorMode"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sensor_view_title"
         android:id="@+id/sensor_view_btn"
+        android:onClick="enterSensorMode"
         android:layout_below="@+id/move_motors_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterSensorMode"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

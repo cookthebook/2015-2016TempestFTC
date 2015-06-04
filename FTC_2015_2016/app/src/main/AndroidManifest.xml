@@ -36,6 +36,18 @@
             android:name=".SensorActivity"
             android:label="@string/title_activity_sensor" >
         </activity>
+        <activity
+            android:name=".SelectAutonomousActivity"
+            android:label="@string/title_activity_select_autonomous" >
+        </activity>
+        <activity
+            android:name=".SelectTeleopActivity"
+            android:label="@string/title_activity_select_teleop" >
+        </activity>
+        <activity
+            android:name=".EditAutonomousActivity"
+            android:label="@string/title_activity_edit_autonomous" >
+        </activity>
     </application>
 
 </manifest>

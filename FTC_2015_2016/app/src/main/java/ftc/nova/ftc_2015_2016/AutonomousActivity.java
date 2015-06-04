@@ -1,9 +1,11 @@
 package ftc.nova.ftc_2015_2016;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class AutonomousActivity extends ActionBarActivity {
@@ -35,5 +37,15 @@ public class AutonomousActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void selectAutonomous(View view) {
+        Intent intent = new Intent(this, SelectAutonomousActivity.class);
+        startActivity(intent);
+    }
+
+    public void editAutonomous(View view) {
+        Intent intent = new Intent(this, EditAutonomousActivity.class);
+        startActivity(intent);
     }
 }

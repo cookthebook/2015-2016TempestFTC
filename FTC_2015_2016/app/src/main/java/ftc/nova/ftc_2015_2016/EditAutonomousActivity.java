@@ -1,27 +1,25 @@
 package ftc.nova.ftc_2015_2016;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
-public class TournamentActivity extends ActionBarActivity {
+public class EditAutonomousActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tournament);
+        setContentView(R.layout.activity_edit_autonomous);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tournament, menu);
+        getMenuInflater().inflate(R.menu.menu_edit_autonomous, menu);
         return true;
     }
 
@@ -40,18 +38,7 @@ public class TournamentActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void selectAutonomous(View view) {
-        Intent intent = new Intent(this, SelectAutonomousActivity.class);
-        startActivity(intent);
-    }
-
-    public void selectTeleop(View view) {
-        Intent intent = new Intent(this, SelectTeleopActivity.class);
-        startActivity(intent);
-    }
-
-    public void noAssignmentNotice(View view) {
-        Toast.makeText(this, "This function has no assignment yet...", Toast.LENGTH_SHORT).show();
+    public void done(View view) {
+        finish();
     }
 }
